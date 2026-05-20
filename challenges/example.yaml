@@ -1,0 +1,11 @@
+description: |
+	Example challenge used to demonstrate the ChallengeSpec fields.
+	This challenge requires analyzing a provided target and extracting a
+	secret that matches the configured flag format. It is intentionally
+	simple and serves as a template for creating new challenge YAML files.
+target: "http://example.local:8080/"
+flag_format: "^FLAG\{[A-Za-z0-9_\-]{8,128}\}$"
+allowed_targets:
+	- "http://example.local:8080/"
+	- "127.0.0.1:8080"
+category_hint: "forensics"
