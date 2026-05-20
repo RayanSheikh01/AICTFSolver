@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aictfsolver"
+version = "0.1.0"
+description = "Autonomous LangGraph agent that solves Web/Recon CTF challenges in a sandboxed Docker container."
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "anthropic",
+    "pydantic>=2",
+    "pyyaml",
+    "docker",
+    "click",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+aictfsolver = "aictfsolver.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not e2e'"
+markers = [
+    "e2e: end-to-end tests requiring docker compose targets (deselected by default)",
+]
+testpaths = ["tests"]
