@@ -1,0 +1,5 @@
+/admin                (Status: 301) [Size: 178] [--> http://target/admin/]
+/images               (Status: 301) [Size: 178] [--> http://target/images/]
+/index.html           (Status: 200) [Size: 1024]
+/robots.txt           (Status: 200) [Size: 42]
+/server-status        (Status: 403) [Size: 277]

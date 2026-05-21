@@ -22,3 +22,5 @@ curl_headers_spec = ToolSpec(
 
 def install(registry):
     registry.register_tool(curl_headers_spec)
+
+
