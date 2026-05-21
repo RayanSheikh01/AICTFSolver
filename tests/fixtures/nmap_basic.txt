@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Thu Jan  1 00:00:00 2020 as: nmap -sV localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000050s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.4 (protocol 2.0)
+80/tcp  open  http     Apache httpd 2.4.6 ((CentOS))
+443/tcp open  https    Apache httpd 2.4.6 ((CentOS))
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  1 00:00:10 2020 -- 1 IP address (1 host up) scanned in 10.43 seconds
