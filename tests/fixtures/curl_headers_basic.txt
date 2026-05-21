@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Tue, 21 May 2026 12:34:56 GMT
+Server: nginx/1.25.3
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1270
+Connection: keep-alive
+X-Powered-By: PHP/8.2.10
+Set-Cookie: PHPSESSID=abc123def456; path=/; HttpOnly
+Cache-Control: no-store, no-cache, must-revalidate
