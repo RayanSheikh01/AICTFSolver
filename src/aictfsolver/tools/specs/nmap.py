@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 
-from aictfsolver.state import Finding
 from aictfsolver.tools.registry import ToolRegistry, ToolSpec
 from aictfsolver.tools.parsers.nmap import parse_nmap_output
 
